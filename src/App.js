@@ -8,6 +8,7 @@ import FeatureGrid from './components/Featuregrid';
 import ProductList from './components/ProductList';
 import NewProductList from './components/NewProductList';
 import BestSaleList from './components/BestSaleList';
+import Footer from './components/footer/Footer';
 // import Home from './modules/home/Home';
 // import Shop from './modules/shop/Shop';
 // import Cart from './modules/cart/Cart';
@@ -23,6 +24,7 @@ function App() {
     <ProductList/>
     <NewProductList/>
     <BestSaleList/>
+    <Footer/>
 
       {/* <Routes>
         
