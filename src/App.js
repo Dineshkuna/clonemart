@@ -5,6 +5,7 @@ import React from 'react';
 import Navbar from './components/header/Navbar';
 import Carousel from './components/Carousel';
 import FeatureGrid from './components/Featuregrid';
+import ProductList from './components/ProductList';
 // import Home from './modules/home/Home';
 // import Shop from './modules/shop/Shop';
 // import Cart from './modules/cart/Cart';
@@ -17,6 +18,7 @@ function App() {
     <Navbar/>
     <Carousel/>
     <FeatureGrid/>
+    <ProductList/>
 
       {/* <Routes>
         
