@@ -7,6 +7,7 @@ import Carousel from './components/Carousel';
 import FeatureGrid from './components/Featuregrid';
 import ProductList from './components/ProductList';
 import NewProductList from './components/NewProductList';
+import BestSaleList from './components/BestSaleList';
 // import Home from './modules/home/Home';
 // import Shop from './modules/shop/Shop';
 // import Cart from './modules/cart/Cart';
@@ -21,6 +22,7 @@ function App() {
     <FeatureGrid/>
     <ProductList/>
     <NewProductList/>
+    <BestSaleList/>
 
       {/* <Routes>
         
