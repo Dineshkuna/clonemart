@@ -17,21 +17,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-    // <div>
-    //   <nav>
-    //     <ul>
-    //       <li>
-    //         <Link to='/'>Home</Link>
-    //       </li>
-    //       <li>
-    //         <Link to='/'>Shop</Link>
-    //       </li>
-    //       <li>
-    //         <Link to='/'>Cart</Link>
-    //       </li>
-    //     </ul>
-    //   </nav>
-    // </div>
+    
   );
 };
 

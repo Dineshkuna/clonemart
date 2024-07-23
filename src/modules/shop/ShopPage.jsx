@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ShopPage.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import productImg01 from "../../Assets/Images/double-sofa-01.png";
 import productImg02 from "../../Assets/Images/double-sofa-02.png";
@@ -662,7 +664,29 @@ const ShopPage = () => {
   }, [selectedCategory, searchQuery, isInitialLoad]);
 
 
-  
+  const addToCart = (product) => {
+    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingProductIndex = existingCart.findIndex(item => item.id === product.id);
+
+    if (existingProductIndex !== -1) {
+      existingCart[existingProductIndex].quantity += 1;
+    } else {
+      existingCart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(existingCart));
+    toast.success('Product added to cart!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
+
 
   return (
     <div className="shop-page">
@@ -689,6 +713,7 @@ const ShopPage = () => {
           />
         </div>
       </div>
+      <ToastContainer />
       <div className="product-grid">
         {filteredProducts.map(product => (
           <div key={product.id} className="product-card">
@@ -701,7 +726,7 @@ const ShopPage = () => {
               
             </div>
             <p>${product.price}</p>
-            <button className="add-to-cart">+</button>
+            <button className="add-to-cart" onClick={() => addToCart(product)} >+</button>
           </div>
         ))}
       </div>
