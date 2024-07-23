@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-<<<<<<< HEAD
-import './index.css';
-=======
 
->>>>>>> origin/main
+import './index.css';
+
+
 import App from './App';
 
 
