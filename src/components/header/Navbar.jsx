@@ -17,7 +17,25 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
     
+=======
+    // <div>
+    //   <nav>
+    //     <ul>
+    //       <li>
+    //         <Link to='/'>Home</Link>
+    //       </li>
+    //       <li>
+    //         <Link to='/'>Shop</Link>
+    //       </li>
+    //       <li>
+    //         <Link to='/'>Cart</Link>
+    //       </li>
+    //     </ul>
+    //   </nav>
+    // </div>
+>>>>>>> origin/main
   );
 };
 
